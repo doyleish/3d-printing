@@ -14,17 +14,17 @@ difference(){
         difference(){
             cube([b_w,b_l,b_t]);
             translate([b_w/2,(b_l-bolt_distance)/2,0]){
-                cylinder(r=m3/2,h=b_t);
+                cylinder($fn=50, d=m3,h=b_t);
             }
             translate([b_w/2,(b_l+bolt_distance)/2,0]){
-                cylinder(r=m3/2,h=b_t);
+                cylinder($fn=50, d=m3,h=b_t);
             }
         }
         translate([b_w/2,b_l/2,b_t]){
-            cylinder(r=hole_od/2,h=hole_d);
+            cylinder($fn=160, d=hole_od,h=hole_d);
         }
     }
     translate([b_w/2,b_l/2,0]){
-        cylinder(r=hole_id/2,h=hole_d+b_t);
+        cylinder($fn=140, d=hole_id,h=hole_d+b_t);
     }
 }
