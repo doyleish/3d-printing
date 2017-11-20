@@ -1,3 +1,5 @@
+// resolution
+res=120;
 
 //bracket
 fan_plate_w = 44;
@@ -18,19 +20,19 @@ difference(){
     cube([fan_plate_w, fan_plate_d, shell]);
     translate([0,fan_plate_d-fan_plate_w,0]){
         translate([fan_plate_w/2, fan_plate_w/2,0]){
-            cylinder(h=shell, r=36/2);
+            cylinder($fn=res, h=shell, d=36);
         }
         translate([m3_offset, m3_offset,0]){
-            cylinder(h=shell, r=m3/2);
+            cylinder($fn=res, h=shell, d=m3);
         }
         translate([fan_plate_w-m3_offset, m3_offset,0]){
-            cylinder(h=shell, r=m3/2);
+            cylinder($fn=res, h=shell, d=m3);
         }
         translate([m3_offset, fan_plate_w-m3_offset,0]){
-            cylinder(h=shell, r=m3/2);
+            cylinder($fn=res, h=shell, d=m3);
         }
         translate([fan_plate_w-m3_offset, fan_plate_w-m3_offset,0]){
-            cylinder(h=shell, r=m3/2);
+            cylinder($fn=res, h=shell, d=m3);
         }
     }
 }
@@ -40,7 +42,7 @@ difference(){
     }
     translate([fan_plate_w/2,0,6]){
         rotate([-90,0,0]){
-            cylinder(h=bracket_t, r=m3/2);
+            cylinder($fn=res, h=bracket_t, d=m3);
         }
     }
 }
@@ -51,7 +53,7 @@ difference(){
             cube([fan_plate_w, fan_plate_d, shell]);
         }
         
-        translate([fan_plate_w/4,44-10,29]){rotate([-60,0,0]){
+        translate([fan_plate_w/4,44-7,29]){rotate([-60,0,0]){
             cube([fan_plate_w/2, 10, shell]);
         }}
     }
@@ -60,7 +62,7 @@ difference(){
             cube([fan_plate_w-shell*2, fan_plate_d-shell*2, shell]);
         }
          
-        translate([fan_plate_w/4,44-10,29]){rotate([-60,0,0]){
+        translate([fan_plate_w/4,44-7,29]){rotate([-60,0,0]){
                 translate([shell,shell,0]){
                     cube([fan_plate_w/2-shell*2, 10-shell*2, shell]);
                 }
