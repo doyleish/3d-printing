@@ -446,7 +446,7 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define Z_PROBE_XY_SPEED 150
 #define Z_PROBE_SWITCHING_DISTANCE 1
 #define Z_PROBE_REPETITIONS 2
-#define Z_PROBE_HEIGHT 0.1
+#define Z_PROBE_HEIGHT 0
 #define Z_PROBE_START_SCRIPT ""
 #define Z_PROBE_FINISHED_SCRIPT ""
 #define Z_PROBE_REQUIRES_HEATING 0
@@ -469,7 +469,7 @@ WARNING: Servos can draw a considerable amount of current. Make sure your system
 #define BED_MOTOR_3_X 100
 #define BED_MOTOR_3_Y 200
 #define BENDING_CORRECTION_A 2
-#define BENDING_CORRECTION_B 1.2
+#define BENDING_CORRECTION_B 1
 #define BENDING_CORRECTION_C 0
 #define FEATURE_AXISCOMP 0
 #define AXISCOMP_TANXY 0
@@ -876,7 +876,7 @@ Values must be in range 1..255
     "zProbeWaitBeforeTest": "0",
     "zProbeSpeed": 3,
     "zProbeXYSpeed": 150,
-    "zProbeHeight": 0.1,
+    "zProbeHeight": 0,
     "zProbeStartScript": "",
     "zProbeFinishedScript": "",
     "featureAutolevel": "1",
@@ -1059,7 +1059,7 @@ Values must be in range 1..255
     "interpolateAccelerationWithZ": 0,
     "accelerationFactorTop": 100,
     "bendingCorrectionA": 2,
-    "bendingCorrectionB": 1.2,
+    "bendingCorrectionB": 1,
     "bendingCorrectionC": 0,
     "preventZDisableOnStepperTimeout": "0",
     "supportLaser": "0",
