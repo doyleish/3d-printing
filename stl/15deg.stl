@@ -1,0 +1,226 @@
+solid OpenSCAD_Model
+  facet normal -1 0 0
+    outer loop
+      vertex 0 10 2
+      vertex 0 40.0001 9.91821e-05
+      vertex 0 40.0001 0
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 0 40.0001 9.91821e-05
+      vertex 0 10 2
+      vertex 0 10.0001 7.764
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 0 0 0
+      vertex 0 10 2
+      vertex 0 40.0001 0
+    endloop
+  endfacet
+  facet normal -1 -0 0
+    outer loop
+      vertex 0 10 2
+      vertex 0 0 0
+      vertex 0 3 2
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 0 0 7.764
+      vertex 0 3 2
+      vertex 0 0 0
+    endloop
+  endfacet
+  facet normal -1 0 0
+    outer loop
+      vertex 0 3 2
+      vertex 0 0 7.764
+      vertex 0 3 7.764
+    endloop
+  endfacet
+  facet normal -1 -0 0
+    outer loop
+      vertex 0 10.0001 7.764
+      vertex 0 10 2
+      vertex 0 10 7.764
+    endloop
+  endfacet
+  facet normal -0 0 1
+    outer loop
+      vertex 0 10 2
+      vertex 30 3 2
+      vertex 30 10 2
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 30 3 2
+      vertex 0 10 2
+      vertex 0 3 2
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 30 3 7.764
+      vertex 30 0 7.764
+      vertex 30 3 2
+    endloop
+  endfacet
+  facet normal 1 -0 0
+    outer loop
+      vertex 30 10 2
+      vertex 30 40.0001 9.91821e-05
+      vertex 30 10.0001 7.764
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 30 10 2
+      vertex 30 10.0001 7.764
+      vertex 30 10 7.764
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 30 40.0001 9.91821e-05
+      vertex 30 10 2
+      vertex 30 40.0001 0
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 30 0 0
+      vertex 30 10 2
+      vertex 30 3 2
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 30 10 2
+      vertex 30 0 0
+      vertex 30 40.0001 0
+    endloop
+  endfacet
+  facet normal 1 0 0
+    outer loop
+      vertex 30 0 0
+      vertex 30 3 2
+      vertex 30 0 7.764
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 0 10 2
+      vertex 30 10 7.764
+      vertex 0 10 7.764
+    endloop
+  endfacet
+  facet normal 0 -1 -0
+    outer loop
+      vertex 30 10 7.764
+      vertex 0 10 2
+      vertex 30 10 2
+    endloop
+  endfacet
+  facet normal 0 0 -1
+    outer loop
+      vertex 0 0 0
+      vertex 30 40.0001 0
+      vertex 30 0 0
+    endloop
+  endfacet
+  facet normal -0 0 -1
+    outer loop
+      vertex 30 40.0001 0
+      vertex 0 0 0
+      vertex 0 40.0001 0
+    endloop
+  endfacet
+  facet normal 0 -1 0
+    outer loop
+      vertex 0 0 0
+      vertex 30 0 7.764
+      vertex 0 0 7.764
+    endloop
+  endfacet
+  facet normal 0 -1 -0
+    outer loop
+      vertex 30 0 7.764
+      vertex 0 0 0
+      vertex 30 0 0
+    endloop
+  endfacet
+  facet normal -0 0 1
+    outer loop
+      vertex 0 3 7.764
+      vertex 30 0 7.764
+      vertex 30 3 7.764
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 30 0 7.764
+      vertex 0 3 7.764
+      vertex 0 0 7.764
+    endloop
+  endfacet
+  facet normal 0 1 -0
+    outer loop
+      vertex 30 3 2
+      vertex 0 3 7.764
+      vertex 30 3 7.764
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 0 3 7.764
+      vertex 30 3 2
+      vertex 0 3 2
+    endloop
+  endfacet
+  facet normal -0 0 1
+    outer loop
+      vertex 0 10.0001 7.764
+      vertex 30 10 7.764
+      vertex 30 10.0001 7.764
+    endloop
+  endfacet
+  facet normal 0 0 1
+    outer loop
+      vertex 30 10 7.764
+      vertex 0 10.0001 7.764
+      vertex 0 10 7.764
+    endloop
+  endfacet
+  facet normal -0 0.250543 0.968106
+    outer loop
+      vertex 0 40.0001 9.91821e-05
+      vertex 30 10.0001 7.764
+      vertex 30 40.0001 9.91821e-05
+    endloop
+  endfacet
+  facet normal 0 0.250543 0.968106
+    outer loop
+      vertex 30 10.0001 7.764
+      vertex 0 40.0001 9.91821e-05
+      vertex 0 10.0001 7.764
+    endloop
+  endfacet
+  facet normal 0 1 -0
+    outer loop
+      vertex 30 40.0001 0
+      vertex 0 40.0001 9.91821e-05
+      vertex 30 40.0001 9.91821e-05
+    endloop
+  endfacet
+  facet normal 0 1 0
+    outer loop
+      vertex 0 40.0001 9.91821e-05
+      vertex 30 40.0001 0
+      vertex 0 40.0001 0
+    endloop
+  endfacet
+endsolid OpenSCAD_Model
