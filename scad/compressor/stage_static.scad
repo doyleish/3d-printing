@@ -2,13 +2,13 @@
 // Single stackable compressor stage
 
 // Render setting ========
-render_housing=1;
+render_housing=0;
 render_compressor=1;
 
 
 // Params  ===========
 // ================
-$fn=200;
+$fn=100;
 
 // Housing
 housing_id=60;
@@ -43,7 +43,10 @@ stator_hub_d_end=36;
 // compressor fan 
 // Comment out unused stages
 compressor_num_blades=10;
-compressor_blade_angle=30;
+compressor_blade_angle=25;
+compressor_blade_radius=40;
+compressor_blade_center_offset=7;
+
 
 //Stage 3
 compressor_hub_d_start=50;
@@ -88,7 +91,7 @@ difference(){
             }
     
             for(i=[0:stator_num_blades-1]){
-                rotate([0,0,i*(365/stator_num_blades)]) {
+                rotate([0,0,i*(360/stator_num_blades)]) {
                     translate([shaft_od*-1,housing_od/2,fan_hub_thickness/2]) {
                         rotate([0,stator_blade_angle,0]) {
                             cube([fan_blade_thickness,housing_od, fan_hub_thickness*2],true);
@@ -108,21 +111,20 @@ difference(){
 }
 
 if(render_compressor){
-translate([0,0,fan_hub_thickness*3+1]){
 difference(){
     intersection(){
         union(){
             hull(){
-                cylinder(d=compressor_hub_d_end,h=0.001);
+                cylinder(d=compressor_hub_d_end, h=0.001);
                 translate([0,0,fan_hub_thickness]) cylinder(d=compressor_hub_d_start,h=0.001);
             }
     
             for(i=[0:compressor_num_blades-1]){
-                rotate([0,0,i*(365/compressor_num_blades)]) {
-                    translate([shaft_od,housing_od/2,fan_hub_thickness/2]) {
-                        rotate([0,compressor_blade_angle*-1,0]) {
-                            cube([fan_blade_thickness,housing_od, fan_hub_thickness*2],true);
-                        }
+                rotate([-90,0,i*(360/compressor_num_blades)]) {
+                    translate([0,fan_hub_thickness/-2,0]) {
+                        linear_extrude(height=50, twist=10) 
+                            translate([fan_blade_thickness/-2,fan_hub_thickness*4/-2]) square([fan_blade_thickness,fan_hub_thickness*4]);
+                            
                     }
                 }
             }
@@ -132,7 +134,6 @@ difference(){
     }
     cylinder(d=shaft_od,h=fan_hub_thickness);
 
-}
 }
 }
 
