@@ -60,7 +60,7 @@ difference(){
 ////top half channel
 difference(){
     hull(){
-        translate([0,bracket_l-1,bracket_t]){ 
+        translate([0,bracket_l,bracket_t]){ 
             rotate([90,0,0]){
                 difference() {
                     translate([fan_plate_side/2,fan_plate_side/2,0]) cylinder(h=fan_plate_t, d=fan_blade_dia+2);
@@ -71,7 +71,7 @@ difference(){
         translate([bracket_w/2-10.5,22,bracket_t]) cube([21,1,20.5]);
     }
     hull(){
-        translate([0,bracket_l-1,bracket_t]){ 
+        translate([0,bracket_l,bracket_t]){ 
             rotate([90,0,0]){
                 difference() {
                     translate([fan_plate_side/2,fan_plate_side/2,0]) cylinder(h=fan_plate_t, d=fan_blade_dia);
@@ -86,7 +86,7 @@ difference(){
 //bottom half channel
 difference(){
     hull(){
-        translate([0,bracket_l-1,bracket_t]){ 
+        translate([0,bracket_l,bracket_t]){ 
             rotate([90,0,0]){
                 difference() {
                     translate([fan_plate_side/2,fan_plate_side/2,0]) cylinder(h=fan_plate_t, d=fan_blade_dia+2);
@@ -97,11 +97,11 @@ difference(){
         translate([bracket_w/2-6,slot_d+9,43+bracket_t-2]) rotate([115,0,0]) cube([12,1,4]);
     }
     hull(){
-        translate([0,bracket_l-1,bracket_t]){ 
+        translate([0,bracket_l,bracket_t]){ 
             rotate([90,0,0]){
                 difference() {
                     translate([fan_plate_side/2,fan_plate_side/2,0]) cylinder(h=fan_plate_t, d=fan_blade_dia);
-                    translate([0,0,0]) cube([fan_plate_side,fan_plate_side/2,fan_plate_t]);
+                    translate([0,0,0]) cube([fan_plate_side,fan_plate_side/2+2,fan_plate_t]);
                 }
             }
         }
