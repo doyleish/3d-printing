@@ -9,7 +9,7 @@ gaggia_t=1.3;
 gusset=12;
 
 cube([wall_t2+auber_x,wall_t2+auber_y,wall_t]);
-cube([wall_t,wall_t2+auber_y,wall_t+auber_z/3]);
+cube([wall_t,wall_t2+auber_y,wall_t+gusset]);
 cube([wall_t2+auber_x,wall_t,wall_t+auber_ridge]);
 translate([0,wall_t+auber_y,0]) cube([wall_t2+auber_x,wall_t,wall_t+auber_ridge]);
 
